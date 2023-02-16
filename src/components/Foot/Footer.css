@@ -1,0 +1,107 @@
+.footer{
+    margin-top: 100px;
+    width: 100%;
+    background: rgb(232, 232, 232);
+}
+.footer-bdy{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+.foot-top{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    margin-top: 50px;
+}
+.foot-top h1{
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: #fff;
+}
+.search{
+    width: 35%;
+    position: relative;
+}
+.search input{
+    width: 100%;
+    height: 50px;
+    outline: none;
+    border: none;
+    padding-left: 10px;
+    font-size: 18px;
+}
+.search button{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(-0%,-50%);
+    padding: 10px 20px 10px 20px;
+    outline: none;
+    border: none;
+    background: gray;
+    color: #fff;
+    cursor: pointer;
+}
+.foot-btm{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-transform: capitalize;
+}
+.agency p{
+    cursor: pointer;
+}
+.partner p{
+    cursor: pointer;
+}
+
+@media screen and (max-width:650px){
+    .footer-bdy{
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+    .foot-top{
+        display: flex;
+       flex-direction: column;
+    }
+    .foot-top h1{
+        font-size:22px;
+    }
+    .foot-btm{
+        display: flex;
+       flex-direction: column;
+       width: 100%;
+       align-items:flex-start;
+        justify-content: space-between;
+    }
+
+    .search{
+        width: 100%;
+        position: relative;
+        margin-bottom: 10px;
+    }
+    .search input{
+        width: 100%;
+        height: 40px;
+        outline: none;
+        border: none;
+        padding-left: 10px;
+        font-size: 16px;
+    }
+    .search button{
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translate(-0%,-50%);
+        padding: 10px 20px 10px 20px;
+        outline: none;
+        border: none;
+        background: gray;
+        color: #fff;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,135 @@
+.destination{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 100px;
+}
+.dest-body{
+    width: 100%;
+    text-align: center;
+}
+.dest-body .des-text p{
+    font-size: 20px;
+}
+.dest-body .des-text h1{
+    font-size: 45px;
+    color: rgb(200, 200, 200);
+}
+.des-item{
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+}
+.des-item .item-top{
+    display: flex;
+    gap: 25px;
+    width: 100%;
+    /* border: 1px solid green; */
+}
+.des-item .item-top .top-card{
+    width:50%;
+    height: 300px;
+    position: relative;
+    cursor: pointer;
+    /* border: 1px solid green; */
+}
+.des-item .item-top .top-card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+}
+.tp-text{
+    position: absolute;
+    left: 50px;
+    bottom: 50px;
+    text-align:left ;
+}
+.tp-text .hd{
+    font-size: 75px;
+    color: #ffff;
+    font-weight: bold;
+}
+.tp-text .sb{
+    font-size: 22px;
+    color: #ffff;
+}
+.item-btm{
+    display: flex;
+    gap: 25px;
+    width: 100%;
+}
+.des-item .item-btm .top-card{
+    width:50%;
+    height: 300px;
+    position: relative;
+    cursor: pointer;
+    /* border: 1px solid green; */
+}
+.des-item .item-btm .top-card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+.dest-body button{
+    padding: 20px 40px 20px 40px;
+    border: none;
+    outline: none;
+    background: rgb(76, 145, 255);
+    color: #fff;
+    border-radius: 25px;
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+@media screen and (max-width:950px){
+    .item-btm{
+        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: 1fr ;
+    }
+    .des-item .item-btm .top-card{
+        width:100%;
+        height: 300px;
+        position: relative;
+        cursor: pointer;
+        /* border: 1px solid green; */
+    }
+    .tp-text .hd{
+        font-size:35px;
+        color: #ffff;
+        font-weight: bold;
+        text-transform: capitalize;
+    }
+    .tp-text .sb{
+        font-size: 16px;
+        color: #ffff;
+    }
+}
+@media screen and (max-width:650px){
+    .dest-body .des-text p{
+        font-size: 16px;
+    }
+    .dest-body .des-text h1{
+        font-size: 25px;
+        color: rgb(200, 200, 200);
+    }
+    .destination{
+        margin-left: 25px;
+        margin-right: 25px;
+        margin-top: 50px;
+    }
+    .item-top{
+        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: 1fr ;
+    }
+    .des-item .item-top .top-card{
+        width:100%;
+        /* border: 1px solid green; */
+    }
+    .dest-body button{
+        padding: 15px 25px 15px 25px;
+    }
+}

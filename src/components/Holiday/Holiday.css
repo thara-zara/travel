@@ -1,0 +1,59 @@
+.Holiday{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 100px;
+}
+.holiday-bdy{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    
+    /* border: 1px solid red; */
+}
+.holiday-bdy .holiday-card{
+    width: 100%;
+    height: 100%;
+    line-height: 0;
+    z-index: 1000;
+}
+.holiday-bdy .holiday-card img{
+    width: 100%;
+    height: 100%;
+   object-fit: cover;
+   border-radius: 25px;
+}
+.holi-txt{
+    position: absolute;
+    font-size: 125px;
+    font-weight: bold;
+    z-index: 10;
+    color: #fff;
+}
+.back-img{
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    line-height: 0;
+    /* border: 1px solid red;  */
+    position: absolute;
+}
+.back-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+@media screen and (max-width:650px){
+    .Holiday{
+        margin-left: 25px;
+        margin-right: 25px;
+        margin-top: 100px;
+    }
+    .holi-txt{
+        position: absolute;
+        font-size: 50px;
+    }
+}
